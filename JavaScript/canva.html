@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #canva{
+
+            border:1px solid black;
+            width: 200px;
+            height: 130px;
+        }
+    </style>
+</head>
+<body>
+
+
+    <canvas id = "canva"></canvas>
+
+
+
+    <script>
+        //RECTANGLE
+        // var canvas = document.getElementById("canva");
+        // var ctx = canvas.getContext('2d');
+        // ctx.beginPath()
+        // ctx.rect(100,30,100,100);//x ,y,w,h 
+        // ctx.fillStyle = "blue";
+        // ctx.fill();
+        // ctx.lineWidth = 5;
+        // ctx.strokeStyle = "red";
+        // ctx.stroke();
+
+
+        //*************LINE CODE*********************
+        // var canvas = document.getElementById("canva");
+        // var ctx = canvas.getContext('2d');
+        // ctx.beginPath();
+        // //Starting Point
+        // ctx.moveTo(0,0) //x,y
+        // //End Point
+        // ctx.lineTo(180,47) //x,y
+        // ctx.lineWidth = 5;
+        // ctx.strokeStyle = "red";
+        // ctx.stroke();
+
+        //**********CIRCLE*************
+
+        var canvas = document.getElementById("canva");
+        var ctx = canvas.getContext('2d');
+        ctx.beginPath();
+        var x = 100;
+        var y = 80;
+        var endAngle = 2 * Math.PI; //Circle 
+        ctx.beginPath()
+        ctx.fillStyle = "pink";
+        ctx.font = "20px Georgia"
+        ctx.strokeStyle = "black";  
+        ctx.lineWidth = 5;
+        ctx.arc(x,y,70,0,endAngle);
+        ctx.fill();
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.fillStyle = "red"
+        ctx.fillText("Hello World! ",40,80);
+        ctx.fill();
+        
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
